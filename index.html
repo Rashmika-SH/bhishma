@@ -1,0 +1,523 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MASTER PSYCHIC BHISHMA | Vedic Astrology Consultations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<canvas id="cosmos-bg"></canvas>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <span class="nav-logo-icon"><svg width="38" height="38" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="sg" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ffe680"/><stop offset="60%" stop-color="#f5c842"/><stop offset="100%" stop-color="#ff6b1a"/></radialGradient></defs><circle cx="32" cy="32" r="11" fill="url(#sg)" filter="url(#glow)"/><circle cx="32" cy="32" r="11" fill="none" stroke="#f5c842" stroke-width="1" opacity="0.6"/><line x1="32" y1="4" x2="32" y2="14" stroke="#f5c842" stroke-width="2.5" stroke-linecap="round"/><line x1="32" y1="50" x2="32" y2="60" stroke="#f5c842" stroke-width="2.5" stroke-linecap="round"/><line x1="4" y1="32" x2="14" y2="32" stroke="#f5c842" stroke-width="2.5" stroke-linecap="round"/><line x1="50" y1="32" x2="60" y2="32" stroke="#f5c842" stroke-width="2.5" stroke-linecap="round"/><line x1="11.5" y1="11.5" x2="18.6" y2="18.6" stroke="#ff9a4d" stroke-width="2.2" stroke-linecap="round"/><line x1="45.4" y1="45.4" x2="52.5" y2="52.5" stroke="#ff9a4d" stroke-width="2.2" stroke-linecap="round"/><line x1="52.5" y1="11.5" x2="45.4" y2="18.6" stroke="#ff9a4d" stroke-width="2.2" stroke-linecap="round"/><line x1="18.6" y1="45.4" x2="11.5" y2="52.5" stroke="#ff9a4d" stroke-width="2.2" stroke-linecap="round"/><line x1="32" y1="7" x2="32" y2="11" stroke="#ffe680" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/><line x1="32" y1="53" x2="32" y2="57" stroke="#ffe680" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/><line x1="7" y1="32" x2="11" y2="32" stroke="#ffe680" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/><line x1="53" y1="32" x2="57" y2="32" stroke="#ffe680" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/></svg></span>
+    <div class="nav-logo-text-wrap">
+      <span class="nav-logo-text">MASTER PSYCHIC BHISHMA</span>
+    </div>
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li><li><a href="index.html#locations">Locations</a></li>
+  </ul>
+  <a href="contact.html" class="nav-btn">Book Consultation</a>
+  <span class="hamburger" id="hamburger">&#9776;</span>
+</nav>
+
+<!-- HERO -->
+<section class="hero-split">
+  <div class="hero-split-left">
+    <span class="pill-tag">&#10022; Vedic Astrology &amp; Spiritual Guidance</span>
+    <h1>Discover Your<br><span>Cosmic Blueprint</span></h1>
+    <p class="hero-desc">Ancient wisdom meets modern clarity. Get personalized birth chart readings, spiritual guidance, and cosmic remedies from a master astrologer with 20+ years of experience.</p>
+    <div class="hero-cta-row">
+      <a href="contact.html" class="btn">Book a Reading</a>
+      <a href="services.html" class="btn-outline">Explore Services</a>
+    </div>
+    <div class="hero-stats-row">
+      <div class="hstat"><strong>10K+</strong><span>Clients</span></div>
+      <div class="hstat-divider"></div>
+      <div class="hstat"><strong>50+</strong><span>Countries</span></div>
+      <div class="hstat-divider"></div>
+      <div class="hstat"><strong>20+</strong><span>Years</span></div>
+    </div>
+    <a href="tel:+18768451699" class="hero-phone">&#128222; +1 876 845 1699</a>
+  </div>
+  <div class="hero-split-right">
+    <div class="hero-img-wrap">
+      <img src="home.jpeg" alt="Master Psychic Bhishma" class="hero-img" />
+      <div class="hero-img-glow"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ZODIAC TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>&#9800; Aries</span><span>&#9801; Taurus</span><span>&#9802; Gemini</span><span>&#9803; Cancer</span>
+    <span>&#9804; Leo</span><span>&#9805; Virgo</span><span>&#9806; Libra</span><span>&#9807; Scorpio</span>
+    <span>&#9808; Sagittarius</span><span>&#9809; Capricorn</span><span>&#9810; Aquarius</span><span>&#9811; Pisces</span>
+    <span>&#9800; Aries</span><span>&#9801; Taurus</span><span>&#9802; Gemini</span><span>&#9803; Cancer</span>
+    <span>&#9804; Leo</span><span>&#9805; Virgo</span><span>&#9806; Libra</span><span>&#9807; Scorpio</span>
+    <span>&#9808; Sagittarius</span><span>&#9809; Capricorn</span><span>&#9810; Aquarius</span><span>&#9811; Pisces</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section offer-section">
+  <div class="offer-header">
+    <span class="section-tag">What We Offer</span>
+    <h2 class="section-title">Ancient Arts for <span>Modern Souls</span></h2>
+    <p class="section-sub">From birth chart analysis to spiritual protection — every service is tailored to your unique cosmic path.</p>
+  </div>
+  <div class="offer-grid">
+    <div class="offer-card" data-reveal onclick="location.href='service-palm-reading.html'">
+      <div class="offer-img-wrap"><img src="services/palm reading.jpeg" alt="Palm Reading" class="offer-img"></div>
+      <h3>Palm Reading</h3>
+      <p>Your hands hold the map of your destiny. The lines, mounts, and shapes of your palms reveal deep truths about your life path, health, love, and future. Every hand tells a unique story waiting to be read.</p>
+      <a href="service-palm-reading.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-voodoo-removal.html'">
+      <div class="offer-img-wrap"><img src="services/Voodoo removal.jpeg" alt="Voodoo Removal" class="offer-img"></div>
+      <h3>Voodoo Removal</h3>
+      <p>Powerful rituals to detect and remove voodoo spells and dark bindings placed against you. Restore your natural energy, personal freedom, and full spiritual protection from all forms of dark influence.</p>
+      <a href="service-voodoo-removal.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-kundli-reading.html'">
+      <div class="offer-img-wrap"><img src="services/Kundli Reading.png" alt="Kundli Reading" class="offer-img"></div>
+      <h3>Kundli Reading</h3>
+      <p>A complete Vedic birth chart analysis across all 12 houses revealing your karma, destiny, and life purpose. Includes dasha predictions, planetary positions, and personalized remedies to align your path.</p>
+      <a href="service-kundli-reading.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-tarot-reading.html'">
+      <div class="offer-img-wrap"><img src="services/Tarot Card Reading.jpeg" alt="Tarot Card Reading" class="offer-img"></div>
+      <h3>Tarot Card Reading</h3>
+      <p>Ancient cards carry timeless wisdom. Each card drawn reveals hidden truths and powerful guidance about your love life, career, and the road ahead. Let the cards illuminate what the mind cannot see.</p>
+      <a href="service-tarot-reading.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-psychic-reading.html'">
+      <div class="offer-img-wrap"><img src="services/Psychic Reading.jpeg" alt="Psychic Reading" class="offer-img"></div>
+      <h3>Psychic Reading</h3>
+      <p>Tap into higher consciousness and spiritual energies that guide your soul's true direction. Gain deep clarity on life's most pressing questions — relationships, purpose, and the choices that shape your future.</p>
+      <a href="service-psychic-reading.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-horoscope-reading.html'">
+      <div class="offer-img-wrap"><img src="services/Horoscope reading.jpeg" alt="Horoscope Reading" class="offer-img"></div>
+      <h3>Horoscope Reading</h3>
+      <p>Detailed astrological forecasts based on your zodiac sign and current planetary positions. Covering daily, weekly, monthly, and yearly predictions to help you navigate life with cosmic awareness.</p>
+      <a href="service-horoscope-reading.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-fortune-telling.html'">
+      <div class="offer-img-wrap"><img src="services/Fortune Telling.png" alt="Fortune Telling" class="offer-img"></div>
+      <h3>Fortune Telling</h3>
+      <p>Discover what the universe has written for you. Using multiple divination methods, we reveal the opportunities, challenges, and turning points that lie ahead on your unique life journey.</p>
+      <a href="service-fortune-telling.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-love-spell.html'">
+      <div class="offer-img-wrap"><img src="services/Love spell.png" alt="Love Spell" class="offer-img"></div>
+      <h3>Love Spell</h3>
+      <p>Harness the power of cosmic energy to attract true love, deepen existing bonds, and restore harmony in your romantic life. Sacred rituals aligned with the universe's natural forces of attraction.</p>
+      <a href="service-love-spell.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-get-ex-love-back.html'">
+      <div class="offer-img-wrap"><img src="services/Get ex love back.jpeg" alt="Get Ex Love Back" class="offer-img"></div>
+      <h3>Get Ex Love Back</h3>
+      <p>Reconnect with a lost love through powerful spiritual remedies and astrological guidance. Heal broken bonds, remove emotional barriers, and restore the deep connection you once shared.</p>
+      <a href="service-get-ex-love-back.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-marriage-problems.html'">
+      <div class="offer-img-wrap"><img src="services/Marriage Problems.png" alt="Marriage Problems" class="offer-img"></div>
+      <h3>Marriage Problems</h3>
+      <p>Resolve conflicts, misunderstandings, and compatibility issues in marriage through Vedic remedies and spiritual counseling. Bring back trust, love, and lasting peace to your relationship.</p>
+      <a href="service-marriage-problems.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-divorce-problems.html'">
+      <div class="offer-img-wrap"><img src="services/Divorce Problems.png" alt="Divorce Problems" class="offer-img"></div>
+      <h3>Divorce Problems</h3>
+      <p>Navigate the pain of separation with spiritual support and astrological remedies. Find clarity, emotional healing, and the strength to move forward toward a brighter, more peaceful future.</p>
+      <a href="service-divorce-problems.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-relationship-problems.html'">
+      <div class="offer-img-wrap"><img src="services/Relationship Problems.png" alt="Relationship Problems" class="offer-img"></div>
+      <h3>Relationship Problems</h3>
+      <p>Identify and resolve the root causes of relationship struggles using birth chart compatibility analysis. Targeted spiritual remedies restore understanding, harmony, and lasting connection between partners.</p>
+      <a href="service-relationship-problems.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-business-job-problems.html'">
+      <div class="offer-img-wrap"><img src="services/Business and Job Problems.png" alt="Business &amp; Job Problems" class="offer-img"></div>
+      <h3>Business &amp; Job Problems</h3>
+      <p>Overcome career obstacles, financial stagnation, and business challenges through planetary remedies and Vastu corrections. Align your professional life with cosmic forces that attract success and prosperity.</p>
+      <a href="service-business-job-problems.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-black-magic-removal.html'">
+      <div class="offer-img-wrap"><img src="services/Black magic.jpeg" alt="Black Magic Removal" class="offer-img"></div>
+      <h3>Black Magic Removal</h3>
+      <p>Identify and neutralize the effects of black magic through powerful protective rituals and sacred mantras. Restore your natural energy, break harmful spells, and shield yourself from future attacks.</p>
+      <a href="service-black-magic-removal.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-dark-curse-removal.html'">
+      <div class="offer-img-wrap"><img src="services/Dark curse removal.jpeg" alt="Dark Curse Removal" class="offer-img"></div>
+      <h3>Dark Curse Removal</h3>
+      <p>Break free from generational curses and dark energies that silently block your progress and happiness. Ancient removal rituals cleanse your bloodline and restore the natural flow of blessings into your life.</p>
+      <a href="service-dark-curse-removal.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-evil-spirits-removal.html'">
+      <div class="offer-img-wrap"><img src="services/Evil spirits removal.jpeg" alt="Evil Spirits Removal" class="offer-img"></div>
+      <h3>Evil Spirits Removal</h3>
+      <p>Cleanse your home, body, and aura from negative spiritual entities using sacred prayers and powerful energy work. Restore peace, safety, and positive vibrations to every space you inhabit.</p>
+      <a href="service-evil-spirits-removal.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-nazar-removal.html'">
+      <div class="offer-img-wrap"><img src="services/Nazar and Negative Energy Removal.png" alt="Nazar Removal" class="offer-img"></div>
+      <h3>Nazar &amp; Negative Energy Removal</h3>
+      <p>Remove the evil eye (Nazar) and deeply cleanse accumulated negative energies from your life, home, and relationships. Reclaim your positivity, confidence, and natural good fortune.</p>
+      <a href="service-nazar-removal.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-dosha-remedies.html'">
+      <div class="offer-img-wrap"><img src="services/Dosha Remedies.jpeg" alt="Dosha Remedies" class="offer-img"></div>
+      <h3>Dosha Remedies</h3>
+      <p>Address Mangal Dosha, Kaal Sarp Dosha, Pitra Dosha, and other planetary afflictions through personalized Vedic remedies, rituals, and mantras that restore cosmic balance in your life.</p>
+      <a href="service-dosha-remedies.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-spiritual-healing.html'">
+      <div class="offer-img-wrap"><img src="services/Spiritual Healing and Health Issues.png" alt="Spiritual Healing" class="offer-img"></div>
+      <h3>Spiritual Healing &amp; Health</h3>
+      <p>Address chronic health issues rooted in planetary imbalances and negative energies. Through spiritual healing, personalized mantras, and energy restoration, reclaim your vitality and inner wellbeing.</p>
+      <a href="service-spiritual-healing.html" class="btn-sm">Learn More</a>
+    </div>
+    <div class="offer-card" data-reveal onclick="location.href='service-jealousy-removal.html'">
+      <div class="offer-img-wrap"><img src="services/Jealous Removal.png" alt="Jealousy Removal" class="offer-img"></div>
+      <h3>Jealousy Removal</h3>
+      <p>Clear jealous energies and envious forces that silently block your success and peace of mind. Targeted spiritual cleansing removes these invisible barriers and restores your natural flow of abundance.</p>
+      <a href="service-jealousy-removal.html" class="btn-sm">Learn More</a>
+    </div>
+  </div>
+  <div class="offer-footer">
+    <a href="services.html" class="btn-outline">View All Services &#8594;</a>
+  </div>
+</section>
+
+<!-- SPOTLIGHT -->
+<section class="spotlight-section">
+  <div class="spotlight-card">
+    <div class="spotlight-left">
+      <div class="spotlight-avatar">
+        <span>&#127769;</span>
+        <div class="avatar-ring"></div>
+        <div class="avatar-badge">20+ Yrs</div>
+      </div>
+    </div>
+    <div class="spotlight-right">
+      <span class="section-tag">Meet the Astrologer</span>
+      <h2>Guided by the <span>Stars Since 2005</span></h2>
+      <p>With over two decades of practice in Vedic astrology, palmistry, and spiritual healing, I've helped more than 10,000 souls across 50+ countries find clarity, purpose, and peace.</p>
+      <p>Every reading is rooted in the sacred science of Jyotish — delivered with compassion, precision, and a genuine desire to transform lives.</p>
+      <div class="spotlight-tags">
+        <span>Vedic Astrology</span><span>Palmistry</span><span>Numerology</span><span>Vastu Shastra</span><span>Spiritual Healing</span>
+      </div>
+      <a href="about.html" class="btn" style="margin-top:20px;">Read My Story</a>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<div class="numbers-strip">
+  <div class="num-item" data-reveal><span class="num-icon">&#127757;</span><strong class="counter" data-target="10000">0</strong><p>Clients Guided</p></div>
+  <div class="num-item" data-reveal><span class="num-icon">&#128506;&#65039;</span><strong class="counter" data-target="50">0</strong><p>Countries Reached</p></div>
+  <div class="num-item" data-reveal><span class="num-icon">&#11088;</span><strong class="counter" data-target="98">0</strong><p>% Satisfaction Rate</p></div>
+  <div class="num-item" data-reveal><span class="num-icon">&#128197;</span><strong class="counter" data-target="20">0</strong><p>Years of Practice</p></div>
+</div>
+
+<!-- PROCESS -->
+<section class="section process-section">
+  <span class="section-tag">The Process</span>
+  <h2 class="section-title">Your Journey to <span>Cosmic Clarity</span></h2>
+  <div class="process-steps">
+    <div class="process-step" data-reveal>
+      <div class="step-num">01</div>
+      <div class="step-icon">&#128203;</div>
+      <h3>Choose a Service</h3>
+      <p>Browse our 20+ services and select the reading that resonates with your current life situation.</p>
+    </div>
+    <div class="process-arrow">&#8594;</div>
+    <div class="process-step" data-reveal>
+      <div class="step-num">02</div>
+      <div class="step-icon">&#128199;&#65039;</div>
+      <h3>Book &amp; Share Details</h3>
+      <p>Fill out the consultation form with your birth date, time, and place for an accurate reading.</p>
+    </div>
+    <div class="process-arrow">&#8594;</div>
+    <div class="process-step" data-reveal>
+      <div class="step-num">03</div>
+      <div class="step-icon">&#128302;</div>
+      <h3>Receive Your Reading</h3>
+      <p>Connect via video, phone, or chat. Get your personalized cosmic insights and remedies.</p>
+    </div>
+    <div class="process-arrow">&#8594;</div>
+    <div class="process-step" data-reveal>
+      <div class="step-num">04</div>
+      <div class="step-icon">&#10024;</div>
+      <h3>Transform Your Life</h3>
+      <p>Apply the guidance and remedies to align with your destiny and unlock your true potential.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ZODIAC -->
+<section class="section zodiac-section">
+  <span class="section-tag">Your Sign</span>
+  <h2 class="section-title">What Does Your <span>Zodiac</span> Say?</h2>
+  <p class="section-sub">Click your sign to discover your cosmic traits and what the stars hold for you.</p>
+  <div class="zodiac-grid">
+    <div class="z-card" data-sign="Aries">&#9800;<span>Aries</span></div>
+    <div class="z-card" data-sign="Taurus">&#9801;<span>Taurus</span></div>
+    <div class="z-card" data-sign="Gemini">&#9802;<span>Gemini</span></div>
+    <div class="z-card" data-sign="Cancer">&#9803;<span>Cancer</span></div>
+    <div class="z-card" data-sign="Leo">&#9804;<span>Leo</span></div>
+    <div class="z-card" data-sign="Virgo">&#9805;<span>Virgo</span></div>
+    <div class="z-card" data-sign="Libra">&#9806;<span>Libra</span></div>
+    <div class="z-card" data-sign="Scorpio">&#9807;<span>Scorpio</span></div>
+    <div class="z-card" data-sign="Sagittarius">&#9808;<span>Sagittarius</span></div>
+    <div class="z-card" data-sign="Capricorn">&#9809;<span>Capricorn</span></div>
+    <div class="z-card" data-sign="Aquarius">&#9810;<span>Aquarius</span></div>
+    <div class="z-card" data-sign="Pisces">&#9811;<span>Pisces</span></div>
+  </div>
+  <div class="zodiac-popup" id="zodiac-popup">
+    <button class="zpop-close" id="zpop-close">&#10005;</button>
+    <div class="zpop-sign" id="zpop-sign"></div>
+    <h3 id="zpop-name"></h3>
+    <p id="zpop-desc"></p>
+    <a href="contact.html" class="btn" style="margin-top:14px;">Get Your Full Reading</a>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testi-section">
+  <span class="section-tag">Testimonials</span>
+  <h2 class="section-title">Souls We've <span>Transformed</span></h2>
+  <div class="testi-scroll">
+    <div class="testi-card" data-reveal>
+      <div class="testi-quote">"</div>
+      <p>The birth chart reading was incredibly accurate. It helped me understand my life purpose and make better career decisions. Truly life-changing.</p>
+      <div class="testi-footer"><div class="testi-avatar">P</div><div><strong>Priya S.</strong><span>Mumbai, India</span></div><div class="testi-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div></div>
+    </div>
+    <div class="testi-card" data-reveal>
+      <div class="testi-quote">"</div>
+      <p>The Kundli matching gave us complete confidence before our marriage. The remedies suggested have brought peace and harmony to our home.</p>
+      <div class="testi-footer"><div class="testi-avatar">R</div><div><strong>Rahul &amp; Anita M.</strong><span>Bangalore, India</span></div><div class="testi-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div></div>
+    </div>
+    <div class="testi-card" data-reveal>
+      <div class="testi-quote">"</div>
+      <p>I was skeptical at first, but the planetary transit forecast was spot on. Highly recommend for genuine cosmic guidance and clarity.</p>
+      <div class="testi-footer"><div class="testi-avatar">S</div><div><strong>Sarah K.</strong><span>London, UK</span></div><div class="testi-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div></div>
+    </div>
+    <div class="testi-card" data-reveal>
+      <div class="testi-quote">"</div>
+      <p>After years of bad luck, the black magic removal ritual completely turned my life around. I feel protected and at peace for the first time.</p>
+      <div class="testi-footer"><div class="testi-avatar">A</div><div><strong>Ahmed R.</strong><span>Dubai, UAE</span></div><div class="testi-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div></div>
+    </div>
+    <div class="testi-card" data-reveal>
+      <div class="testi-quote">"</div>
+      <p>The tarot reading was so precise it gave me chills. I finally have the clarity I needed to move forward with my business and personal life.</p>
+      <div class="testi-footer"><div class="testi-avatar">M</div><div><strong>Maria L.</strong><span>Toronto, Canada</span></div><div class="testi-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq-section">
+  <div class="faq-inner">
+    <div class="faq-left">
+      <span class="section-tag">FAQ</span>
+      <h2 class="section-title">Got <span>Questions?</span></h2>
+      <p style="color:var(--muted);font-size:0.9rem;line-height:1.8;margin-bottom:24px;">Everything you need to know before your first consultation. Still unsure? Reach out anytime.</p>
+      <a href="contact.html" class="btn">Ask Us Directly</a>
+    </div>
+    <div class="faq-right">
+      <div class="faq-item">
+        <div class="faq-q">What info do I need for a birth chart reading? <span class="faq-arrow">+</span></div>
+        <div class="faq-a">You need your full date of birth, exact time of birth, and place of birth. The more accurate the birth time, the more precise the reading.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How long does a consultation take? <span class="faq-arrow">+</span></div>
+        <div class="faq-a">A standard consultation is 45–60 minutes. Full life readings may take up to 90 minutes. Written reports are delivered within 24–48 hours.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you offer online consultations? <span class="faq-arrow">+</span></div>
+        <div class="faq-a">Yes, we offer consultations via video call, phone, and chat for clients worldwide across all time zones.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Are the consultations confidential? <span class="faq-arrow">+</span></div>
+        <div class="faq-a">Absolutely. All personal details and readings are kept strictly confidential and never shared with third parties.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What languages do you consult in? <span class="faq-arrow">+</span></div>
+        <div class="faq-a">We offer consultations in English, Hindi, and several other languages. Contact us to confirm availability for your preferred language.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section class="section locations-section" id="locations">
+  <div class="locations-header">
+    <span class="section-tag">Where We Serve</span>
+    <h2 class="section-title">Trusted Across the <span>Globe</span></h2>
+    <p class="section-sub">Master Psychic Bhishma delivers powerful spiritual guidance across the Caribbean, South America, and beyond.</p>
+  </div>
+  <div class="loc-cards-grid">
+    <div class="loc-card" data-reveal>
+      <div class="loc-card-top"><div class="loc-pin-icon">&#128205;</div><h4>Kingston</h4></div>
+      <p class="loc-card-bold">Premier psychic &amp; spiritual services in Jamaica's vibrant capital city.</p>
+      <p class="loc-card-sub">Serving Kingston with authentic Vedic astrology, psychic readings, and powerful spiritual healing.</p>
+    </div>
+    <div class="loc-card" data-reveal>
+      <div class="loc-card-top"><div class="loc-pin-icon">&#128205;</div><h4>Montego Bay</h4></div>
+      <p class="loc-card-bold">Trusted spiritual consultations in Jamaica's second largest city.</p>
+      <p class="loc-card-sub">Bringing cosmic clarity and transformative guidance to the people of Montego Bay.</p>
+    </div>
+    <div class="loc-card" data-reveal>
+      <div class="loc-card-top"><div class="loc-pin-icon">&#128205;</div><h4>Spanish Town</h4></div>
+      <p class="loc-card-bold">Ancient wisdom meets modern clarity in Jamaica's historic capital.</p>
+      <p class="loc-card-sub">Personalized psychic and astrological services for Spanish Town residents seeking answers.</p>
+    </div>
+    <div class="loc-card" data-reveal>
+      <div class="loc-card-top"><div class="loc-pin-icon">&#128205;</div><h4>Ocho Rios</h4></div>
+      <p class="loc-card-bold">Spiritual healing and cosmic guidance on Jamaica's beautiful north coast.</p>
+      <p class="loc-card-sub">Expert readings and powerful remedies tailored for the Ocho Rios community.</p>
+    </div>
+    <div class="loc-card" data-reveal>
+      <div class="loc-card-top"><div class="loc-pin-icon">&#128205;</div><h4>Portmore</h4></div>
+      <p class="loc-card-bold">Comprehensive psychic services for Jamaica's largest municipality.</p>
+      <p class="loc-card-sub">Helping Portmore residents navigate life's challenges with ancient spiritual wisdom.</p>
+    </div>
+    <div class="loc-card" data-reveal>
+      <div class="loc-card-top"><div class="loc-pin-icon">&#128205;</div><h4>Guyana</h4></div>
+      <p class="loc-card-bold">Authentic Vedic astrology and spiritual healing across South America's gem.</p>
+      <p class="loc-card-sub">Serving Guyana with traditional wisdom and powerful cosmic remedies for all life challenges.</p>
+    </div>
+    <div class="loc-card" data-reveal>
+      <div class="loc-card-top"><div class="loc-pin-icon">&#128205;</div><h4>Suriname</h4></div>
+      <p class="loc-card-bold">Trusted psychic consultations for Suriname's diverse and vibrant community.</p>
+      <p class="loc-card-sub">Bridging ancient spiritual knowledge with modern life solutions for Suriname residents.</p>
+    </div>
+    <div class="loc-card" data-reveal>
+      <div class="loc-card-top"><div class="loc-pin-icon">&#128205;</div><h4>French Guiana</h4></div>
+      <p class="loc-card-bold">Expert spiritual guidance in the heart of South America's French territory.</p>
+      <p class="loc-card-sub">Specialized consultations combining Vedic astrology and psychic healing for French Guiana.</p>
+    </div>
+    <div class="loc-card" data-reveal>
+      <div class="loc-card-top"><div class="loc-pin-icon">&#128205;</div><h4>USA</h4></div>
+      <p class="loc-card-bold">Nationwide psychic and astrological services across the United States.</p>
+      <p class="loc-card-sub">Online and in-person consultations available for clients across all 50 states.</p>
+    </div>
+    <div class="loc-card" data-reveal>
+      <div class="loc-card-top"><div class="loc-pin-icon">&#128205;</div><h4>Canada</h4></div>
+      <p class="loc-card-bold">Comprehensive spiritual consultations for clients across Canada.</p>
+      <p class="loc-card-sub">Serving Canadian clients with authentic Vedic wisdom and transformative psychic guidance.</p>
+    </div>
+    <div class="loc-card" data-reveal>
+      <div class="loc-card-top"><div class="loc-pin-icon">&#128205;</div><h4>United Kingdom</h4></div>
+      <p class="loc-card-bold">Trusted psychic and astrological services across Great Britain.</p>
+      <p class="loc-card-sub">Helping UK clients find clarity, healing, and cosmic direction through expert spiritual guidance.</p>
+    </div>
+    <div class="loc-card" data-reveal>
+      <div class="loc-card-top"><div class="loc-pin-icon">&#128205;</div><h4>Australia</h4></div>
+      <p class="loc-card-bold">Premier Vedic astrology and psychic services across the continent.</p>
+      <p class="loc-card-sub">Authentic spiritual consultations tailored for Australia's diverse and dynamic communities.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="cta-banner-inner">
+    <div class="cta-glow"></div>
+    <span class="section-tag" style="text-align:center;display:block;">Start Today</span>
+    <h2>The Stars Are <span>Aligned for You</span></h2>
+    <p>Your destiny is written in the cosmos. Let us help you read it.</p>
+    <form id="cta-form" class="cta-form">
+      <div class="cta-form-row">
+        <div class="form-group"><label for="cta-name">Your Name</label><input type="text" id="cta-name" name="name" placeholder="Enter your full name" required /></div>
+        <div class="form-group"><label for="cta-email">Email Address</label><input type="email" id="cta-email" name="email" placeholder="Enter your email" required /></div>
+      </div>
+      <div class="cta-form-row">
+        <div class="form-group"><label>Date of Birth</label>
+          <div class="dob-row">
+            <select name="dob-day" class="dob-select"><option value="">Day</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option></select>
+            <select name="dob-month" class="dob-select"><option value="">Month</option><option>January</option><option>February</option><option>March</option><option>April</option><option>May</option><option>June</option><option>July</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option></select>
+            <select name="dob-year" class="dob-select"><option value="">Year</option><script>for(var y=new Date().getFullYear();y>=1920;y--){document.write('<option>'+y+'</option>')}</script></select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cta-service">Service Interested In</label>
+          <select id="cta-service" name="service">
+            <option value="">Select a service</option>
+            <option>Palm Reading</option><option>Psychic Reading</option><option>Kundli Reading</option>
+            <option>Horoscope Reading</option><option>Tarot Card Reading</option><option>Fortune Telling</option>
+            <option>Love Spell</option><option>Get Ex Love Back</option><option>Marriage Problems</option>
+            <option>Divorce Problems</option><option>Relationship Problems</option><option>Business &amp; Job Problems</option>
+            <option>Black Magic Removal</option><option>Dark Curse Removal</option><option>Evil Spirits Removal</option>
+            <option>Nazar &amp; Negative Energy Removal</option><option>Dosha Remedies</option>
+            <option>Spiritual Healing &amp; Health</option><option>Jealousy Removal</option><option>Voodoo Removal</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group"><label for="cta-message">Your Message</label><textarea id="cta-message" name="message" rows="4" placeholder="Tell us about your situation..."></textarea></div>
+      <button type="submit" class="btn" style="width:100%;">Send Message</button>
+      <div id="cta-form-success" class="form-success hidden">&#9733; Your message has been successfully submitted! We will get back to you within 24 hours.</div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">&#128305; MASTER PSYCHIC BHISHMA</div>
+        <p>Ancient wisdom. Modern clarity. Transformative guidance for souls seeking their cosmic truth.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-nav">
+        <h4>Services</h4>
+        <a href="services.html">Kundli Reading</a><a href="services.html">Tarot Reading</a><a href="services.html">Love Spells</a><a href="services.html">Protection Rituals</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Connect</h4>
+        <p>&#128222; +1 876 845 1699</p>
+        <p>&#9993;&#65039; cosmic@astrology.com</p>
+        <p>&#128336; Available 24/7</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&#169; 2024 MASTER PSYCHIC BHISHMA. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="float-btns">
+  <a href="https://wa.me/18768451699" class="float-btn whatsapp" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <a href="tel:+18768451699" class="float-btn phone" aria-label="Call us">
+    <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
