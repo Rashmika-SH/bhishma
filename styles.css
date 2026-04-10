@@ -610,7 +610,7 @@ footer { background: rgba(6,0,26,0.95); border-top: 1px solid var(--glass-border
 .bio-section { background: rgba(6,0,26,0.4); padding: 80px 56px; }
 .bio-grid { display: flex; align-items: center; gap: 60px; max-width: 1000px; margin: 0 auto; flex-wrap: wrap; }
 .bio-visual { flex: 0 0 auto; position: relative; display: flex; justify-content: center; }
-.bio-circle { position: relative; width: 170px; height: 170px; display: flex; align-items: center; justify-content: center; }
+.bio-circle { position: relative; width: 200px; height: 200px; display: flex; align-items: center; justify-content: center; }
 .bio-circle span { font-size: 5rem; z-index: 1; filter: drop-shadow(0 0 18px rgba(201,168,76,0.4)); }
 .bio-ring { position: absolute; inset: 0; border-radius: 50%; border: 1px solid var(--glass-border); animation: spin 18s linear infinite; }
 .ap-badge { position: absolute; bottom: -10px; right: -10px; background: linear-gradient(135deg, var(--gold), #9a6f20); color: #06001a; padding: 10px 14px; border-radius: 10px; text-align: center; line-height: 1.3; }

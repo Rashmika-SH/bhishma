@@ -216,15 +216,15 @@ document.querySelectorAll('.faq-item').forEach(item => {
 /* ============================================================
    CONTACT FORM
    ============================================================ */
-function sendToWhatsApp(name, email, dob, service, message) {
+function sendToWhatsApp(name, dob, service, message) {
   const phone = '18768451699';
-  const text = `*New Consultation Request*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Email:* ${encodeURIComponent(email)}%0A*Date of Birth:* ${encodeURIComponent(dob || 'Not provided')}%0A*Service:* ${encodeURIComponent(service || 'Not selected')}%0A*Message:* ${encodeURIComponent(message || 'No message')}`;
-  window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+  const text = `*New Consultation Request*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Date of Birth:* ${encodeURIComponent(dob || 'Not provided')}%0A*Service:* ${encodeURIComponent(service || 'Not selected')}%0A*Message:* ${encodeURIComponent(message || 'No message')}`;
+  const url = `https://api.whatsapp.com/send?phone=${phone}&text=${text}`;
+  window.open(url, '_blank');
 }
 
 async function submitForm(formEl, successId) {
   const name    = formEl.querySelector('[name="name"]').value;
-  const email   = formEl.querySelector('[name="email"]').value;
   const dob     = getDOB(formEl);
   const service = formEl.querySelector('[name="service"]').value;
   const message = formEl.querySelector('[name="message"]')?.value || '';
@@ -234,37 +234,16 @@ async function submitForm(formEl, successId) {
   btn.textContent = 'Sending...';
   btn.disabled = true;
 
-  try {
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({
-        access_key: 'YOUR_WEB3FORMS_ACCESS_KEY',
-        name, email, dob, service, message,
-        subject: 'New Consultation Request - Master Psychic Bhishma'
-      })
-    });
+  sendToWhatsApp(name, dob, service, message);
 
-    const data = await res.json();
-    if (data.success) {
-      successEl.textContent = '★ Successfully sent! We will get back to you within 24 hours.';
-      successEl.style.color = '';
-      successEl.classList.remove('hidden');
-      formEl.reset();
-      sendToWhatsApp(name, email, dob, service, message);
-    } else {
-      successEl.textContent = '✕ Something went wrong. Please try again or call us directly.';
-      successEl.style.color = '#ff6b6b';
-      successEl.classList.remove('hidden');
-    }
-  } catch (err) {
-    successEl.textContent = '✕ Network error. Please call us at +1 876 845 1699.';
-    successEl.style.color = '#ff6b6b';
+  setTimeout(() => {
+    successEl.textContent = '★ Successfully sent! We will get back to you within 24 hours.';
+    successEl.style.color = '';
     successEl.classList.remove('hidden');
-  }
-
-  btn.textContent = 'Send Message';
-  btn.disabled = false;
+    formEl.reset();
+    btn.textContent = 'Send Message';
+    btn.disabled = false;
+  }, 800);
 }
 
 function getDOB(formEl) {
